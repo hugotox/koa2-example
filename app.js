@@ -59,6 +59,3 @@ app.use(jwt({ secret: 'shared-secret' }))
 app.use(api.routes(), api.allowedMethods())
 
 module.exports = app
-
-// TODO: create user protected endpoints (e.g. /api/todos/1 to validate todo id=1 belongs to user)
-
